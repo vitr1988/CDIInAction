@@ -13,15 +13,11 @@ import javax.inject.Inject;
 @Dependent
 public class Account implements Logonable {
 
-    @Inject
-    Logger logger;
-
     private int id;
     private String name;
 
     @Override
     public boolean logon() {
-        logger.info("Logon by id");
         return id != 0;
     }
 }
