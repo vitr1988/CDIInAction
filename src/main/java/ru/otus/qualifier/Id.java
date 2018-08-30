@@ -1,5 +1,7 @@
 package ru.otus.qualifier;
 
+import ru.otus.bean.LangEnum;
+
 import javax.inject.Qualifier;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,4 +12,5 @@ import java.lang.annotation.Target;
 @Target({ElementType.TYPE, ElementType.METHOD, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Id {
+//    LangEnum lang() default LangEnum.RUSSIAN;
 }

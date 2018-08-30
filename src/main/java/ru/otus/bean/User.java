@@ -4,10 +4,12 @@ import lombok.Data;
 import ru.otus.bean.interfaces.Logonable;
 
 import javax.enterprise.context.RequestScoped;
+import javax.enterprise.inject.Default;
 import java.util.logging.Logger;
 
 @Data
 @RequestScoped
+@Default
 public class User implements Logonable {
 
     private static final Logger logger = Logger.getLogger(User.class.getName());

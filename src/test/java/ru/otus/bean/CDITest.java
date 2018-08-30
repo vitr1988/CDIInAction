@@ -21,6 +21,10 @@ public class CDITest {
     @Inject
     PrintService service;
 
+//    @Id//(lang = LangEnum.ENGLISH)
+//    @Inject
+//    Account account;
+
     @Test
     public void testAccount() {
         Account account = weld.select(Account.class, new AnnotationLiteral<Id>(){}).get();
