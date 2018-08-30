@@ -8,4 +8,10 @@
             <if-class-available name="ru.otus.bean.Bean"/>
         </exclude>
     </scan>
+    <alternatives>
+        <class>ru.otus.misc.alternative.OtherPrintServiceImpl</class>
+    </alternatives>
+    <!--<decorators>
+        <class>ru.otus.misc.decorator.AdditionalPrintServiceImpl</class>
+    </decorators>-->
 </beans>
